@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doner Info</title>
+	<style>
+		table, th, td {
+    		margin-left: 35%;
+    		margin-right: auto;
+    		border: none;
+
+
+  		}
+
+
+
+  		th{
+    	
+    	text-align: right;
+    	padding-right:0;
+    	padding-left:0;
+    	}
+
+    	td{
+    	
+    	text-align: left;
+    	padding-right:0;
+    	padding-left:0;
+    	}
+
+    	#amt2{
+    		width: 100px;
+    		height: 15px;
+    	}
+
+    	#comment
+    	{
+    		width: 350px;
+    		height: 200px;
+    	}
+
+    	#frm{
+    		border: solid gray 1px;
+    		background: #D8D8D8;
+    	}
+
+
+	</style>
+	
+</head>
+<body>
+
+	
+
+	<div id = "frm">
+
+		<form action="" method="POST">
+			
+			<div class="mymethod">
+			<h2>Donor Information</h2>
+			<table>
+				
+				<tr>
+					<th>First Name &nbsp</th>
+					<td><input type="text" id="username" name="username" placeholder="First Name"></td>
+				</tr>
+
+				<tr>
+					<th>Last Name &nbsp</th>
+					<td><input type="text" id="username" name="username" placeholder="Last Name"></td>
+				</tr>
+
+				<tr>
+					<th>Company &nbsp</th>
+					<td><input type="text" id="company" name="company" placeholder="Name of the Company"></td>
+				</tr>
+
+				<tr>
+					<th>Address 1 &nbsp</th>
+					<td><input type="text" id="address" name="address1" placeholder="Present Address"></td>
+				</tr>
+
+				<tr>
+					<th>Address 2 &nbsp</th>
+					<td><input type="text" id="address" name="address2" placeholder="Permanent Address"></td>
+				</tr>
+
+				<tr>
+					<th>City &nbsp</th>
+					<td><input type="text" id="city" name="city" placeholder="Name of the City"></td>
+				</tr>
+
+				<tr>
+					<th>State &nbsp</th>
+					<td>
+					<select id="state" name="state" placeholder="Select a State">
+						<option>Select a State</option>
+  						<option value="Savar">Savar</option>
+  						<option value="Gazipur">Gazipur</option>
+  						<option value="Dhanmondi">Dhanmondi</option>
+					</select>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Zip Code &nbsp</th>
+					<td><input type="text" id="zip" name="zip" placeholder="Zip or Postal Code"></td>
+				</tr>
+
+				<tr>
+					<th>Country &nbsp</th>
+					<td>
+					<select id="state" name="state" placeholder="Select a State">
+						<option>Select a Country</option>
+  						<option value="Savar">Bangladesh</option>
+  						<option value="Gazipur">America</option>
+  						<option value="Dhanmondi">India</option>
+					</select>
+					</td>
+				</tr>
+
+
+				
+
+				<tr>
+					<th>Phone &nbsp</th>
+					<td><input type="text" id="phone" name="phone" placeholder="Phone Number"></td>
+				</tr>
+
+				<tr>
+					<th>Fax &nbsp</th>
+					<td><input type="text" id="phone" name="phone" placeholder="Fax Number"></td>
+				</tr>
+
+				<tr>
+					<th>Email &nbsp</th>
+					<td><input type="text" id="email" name="email" placeholder="Email Address"></td>
+				</tr>
+
+
+				<tr>
+					<th>Donation Amount &nbsp</th>
+					<td><input type="radio" id="amt" name="donation" value="none"><label for="none">None</label>
+  					<input type="radio" id="amt" name="donation" value="50"><label for="50">$50</label>
+  					<input type="radio" id="amt" name="donation" value="75"><label for="75">$75</label>
+  					<input type="radio" id="amt" name="donation" value="100"><label for="100">$100</label>
+  					<input type="radio" id="amt" name="donation" value="250"><label for="250">$250</label>
+  					<input type="radio" id="amt" name="donation" value="other"><label for="other">Other</label></td>
+				</tr>
+
+				<tr>
+					<td><p>(check a button or type <br> an amount)</p>
+					</td>
+					<td>Amount $: 
+						<textarea name="comment" form="usrform" id="amt2"></textarea>
+					</td>
+
+				</tr>
+
+				<tr>
+					<th>Recurring Donation</th>
+					<td><input type="checkbox" name="amt3" <label for="amt3">I am interested in giving on a regular basis</label> </td>
+
+				</tr>	
+
+				<tr>
+					<th></th>
+					<td>	
+					 <p>Monthly Credit Card $ <textarea name="comment" form="usrform" id="amt2"></textarea>  &nbsp	For <textarea name="comment" form="usrform" id="amt2"></textarea> Months
+					 </p>
+					 </td>
+				</tr>
+
+
+			</table>
+
+			
+
+			<h2>Honorarium and Memorial Donation Information</h2>
+			<table>
+
+				<tr>
+					<th>I would like to make this<br>donation &nbsp</th>
+					<td><input type="radio" name="donation" value="To Honor"><label for="To Honor">To Honor</label> <br> 
+  					<input type="radio" name="donation" value="In Memory of"><label for="In Memory of">In Memory of</label></td>
+				</tr>
+
+				<tr>
+					<th>Name &nbsp</th>
+					<td><input type="text" id="username" name="username" placeholder="Full Name"></td>
+				</tr>
+
+				<tr>
+					<th>Acknowledge Donation to &nbsp</th>
+					<td><input type="text" id="donation2" name="donation2" placeholder="Full Name"></td>
+				</tr>
+
+				<tr>
+					<th>Address &nbsp</th>
+					<td><input type="text" id="address" name="address3" placeholder="Address"></td>
+				</tr>
+
+				<tr>
+					<th>City &nbsp</th>
+					<td><input type="text" id="city" name="city" placeholder="Name of the City"></td>
+				</tr>
+
+				<tr>
+					<th>State &nbsp</th>
+					<td>
+					<select id="state" name="state" placeholder="Select a State">
+						<option>Select a State</option>
+  						<option value="Savar">Savar</option>
+  						<option value="Gazipur">Gazipur</option>
+  						<option value="Dhanmondi">Dhanmondi</option>
+					</select>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Zip &nbsp</th>
+					<td><input type="text" id="zip" name="zip" placeholder="Zip or Postal Code"></td>
+				</tr>
+
+			</table>	
+
+
+			<h2>Additional Information</h2>
+			<p>Please enter your name, company or organization as you would like it to appear in our publications: </p>
+			<table>
+				<tr>
+					<th>Name &nbsp</th>
+					<td><input type="text" id="username" name="username" placeholder="Full Name"></td>
+				</tr>
+				
+			</table>
+
+			<p>
+				<input type="checkbox" name="amt3" <label for="amt3">I would like my gift to remain anonymous</label> <br>
+				<input type="checkbox" name="amt3" <label for="amt3">My employer offers a matching gift program. I will mail the matching gift form.</label> <br>
+				<input type="checkbox" name="amt3" <label for="amt3">Please save the cost of acknowledging this gift by not mailing a thank you letter.</label> <br>
+			</p>
+
+			<table>
+				<tr>
+					<th>Comments<p>(Please type any question or feedback here)</p></th>
+					<td>
+						<textarea name="comment" form="usrform" id="comment"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<th>How may we contact you?</th>
+					<td>
+						<p>
+						<input type="checkbox" name="contact" <label for="contact">Email</label> <br>
+						<input type="checkbox" name="contact" <label for="contact">Postal Mail</label> <br>
+						<input type="checkbox" name="contact" <label for="contact">Telephone</label> <br>
+						<input type="checkbox" name="contact" <label for="contact">Fax</label> <br>
+						</p>
+					</td>
+				</tr>
+
+				
+				
+				
+			</table>
+
+
+			<p><input type="checkbox" name="contact" <label for="contact">I would like to receive newsletters and information about special events by: </label> <br></p>
+
+			<table>
+
+				<td>
+					<p>
+						<input type="checkbox" name="contact" <label for="contact">Email</label> <br>
+						<input type="checkbox" name="contact" <label for="contact">Postal Mail</label></p>
+				</td>		
+			</table>
+
+			<p><input type="checkbox" name="contact" <label for="contact">I would like information about volunteering with the X-Factors: </label> <br></p>
+
+			<table>
+				<tr>
+          		<th></th>
+          		<td><button type="button">Reset</button> &nbsp &nbsp</td>
+          		<td><button type="button">Continue</button></td>
+          		<td></td>
+      			</tr>
+			</table>
+
+		</div>
+			
+		</form>
+
+	</div>
+
+</body>
+</html>
